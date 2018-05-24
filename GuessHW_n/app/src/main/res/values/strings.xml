@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GuessHW_n</string>
+    <string name="title">和電腦猜拳</string>
+    <string name="GameA">電腦出拳</string>
+    <string name="GameB">玩家出拳</string>
+    <string name="Sentence">判定輸贏：\n</string>
+    <string name="Scissors">剪刀</string>
+    <string name="Stone">石頭</string>
+    <string name="Cloth">布</string>
+    <string name="u_win">恭喜，你贏了！</string>
+    <string name="u_lose">很可惜，請滾！</string>
+    <string name="player_draw">雙方平手！</string>
+    <string name="todo">TODO</string>
+</resources>

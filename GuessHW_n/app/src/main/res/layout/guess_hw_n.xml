@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".GuessHW_n">
+
+    <TextView
+        android:id="@+id/eTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="40sp"
+        android:textColor="#ee00ff"
+        android:text="@string/title" />
+
+    <TextView
+        android:id="@+id/eGameA"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@id/eTitle"
+        android:layout_below="@id/eTitle"
+        android:layout_marginBottom="20dp"
+        android:text="@string/GameA"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eGameB"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@id/eTitle"
+        android:layout_below="@id/eTitle"
+        android:layout_marginBottom="20dp"
+        android:text="@string/GameB"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/eScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/eGameB"
+        android:layout_below="@id/eGameB"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/scissors"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/eStone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/eScissors"
+        android:layout_below="@id/eScissors"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/stone"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/eCloth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/eStone"
+        android:layout_below="@id/eStone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:srcCompat="@drawable/paper"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/eAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/eGameA"
+        android:layout_below="@id/eGameA"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/eSentence"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/Sentence"
+        android:textColor="#ff0004"
+        android:textSize="30sp" />
+
+</RelativeLayout>
